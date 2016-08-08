@@ -1,0 +1,489 @@
+	
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of RESET */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+/* end of BOARDER_BOX */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+/* end of CLEARFIX */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background-color: #fbfbfb;
+}
+
+/* Header Begins */
+
+header {
+	background: url(images/hero-photo.jpg) no-repeat center center fixed; 
+  	background-size: cover;
+  	height: 100vh;	
+}
+
+.background-color {
+	background-color: rgba(19, 19, 43, 0.8);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.outer-wrapper {
+	position: relative;
+	max-width: 1380px;
+	margin: 0 auto;
+}
+
+.underline {
+	max-width: 1170px;
+	border-bottom: 2px solid #ffffff;
+	margin: 0 auto;
+}
+
+.inner-wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+/* Header Ends*/
+
+/* Nav Bar Begins*/
+
+nav {
+	margin-right: 100px;
+	padding-top: 45px;
+	height: 120px;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    height: 120px; 
+}
+
+nav ul li {
+	float: right;
+	font-size: 1rem;
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .3s;
+}
+
+nav a:hover {
+	color: #0de7cb;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+/* End of Nav */
+
+/* Begining of Hero Section */
+
+h1 {
+	font-size: 3.9rem;
+	color: #ffffff;
+}
+
+.hero-text {
+	height: 600px;
+	margin-top: 150px;
+}
+
+.front-end-text {
+	margin: 0 auto;
+	max-width: 70%;
+	line-height: 80px;
+}
+
+.meet-you {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	color: #ffffff;
+	font-size: 1.4rem;
+	color: #0de7cb;
+}
+
+button {
+    margin-top: 20px;
+    border: 1px solid #0de7cb;
+    width: 125px;
+    height: 40px;
+    background: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-radius: 2px;
+	background: linear-gradient(
+	 rgba(15, 14, 56, 0.1), rgba(15, 14, 56, 0.1) 50%, #0de7cb 50%, #0de7cb);
+	background-size: 100% 200%;
+	transition: all 0.5s ease;
+	margin-bottom: -1px;
+	color: #ffffff;
+}
+
+button a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 11px 17px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-position: 100% 100%;
+	border: 1px solid #0de7cb;
+}
+
+
+/* End of Hero Section*/
+
+/* Beginning of About Section */
+
+h2 {
+	font-size: 2.7rem;
+	text-align: center;
+	padding-top: 130px;
+	color: 	#0f0e38;
+}
+
+.box {
+	width: 35%;
+}
+
+.about-box {
+	position: relative;
+	z-index: 10;
+	background-color: grey;
+	float: left;
+	margin-top: 200px;
+	margin-left: 222px;
+	margin-bottom: 200px;
+	background-color: #0de7cb;
+	border-radius: 2px;
+	padding-bottom: 117px;
+}
+
+.photo-box {
+	position: absolute;
+	z-index: 20;
+	left: 674px;
+	background-color: #dbdbdb;
+	float: left;
+	margin-top: 100px;
+	border-radius: 2px;
+	background-image: url(images/brad.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 530px;
+	text-align: center;
+}
+
+.about-me-text {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    margin-right: 55px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.margin-top-me {
+	margin-top: 100px;
+}
+
+.head-shot {
+	height: 550px;
+	width: 75%;
+	margin-left: 77px;
+}
+
+/* End of About Me */
+
+/* Beginin of Tool Section */
+
+.card {
+	text-align: center;
+}
+
+.skills {
+	background-color: #0de7cb;
+	height: 400px;
+}
+
+.tool-title {
+	font-size: 2.7rem;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.service {
+	width: 16.66666%;
+	float: left;
+	color:#0f0e38;
+	transition: color .4s;
+}
+
+.service:hover {
+	color: 	#9137ac;
+}
+
+.tools-title {
+	font-size: 1.2rem;
+	margin-top: 40px;
+	margin-bottom: 45px;
+}
+
+i.icons {
+	font-size: 4.7rem;
+}
+
+.fa.fa-html5, .fa.fa-css3 {
+	font-size: 75px;
+}
+
+/* End of Tool Section */
+
+/* Contact Section Begins*/
+
+.contact-background {
+	background-color: #0f0e38;
+	height: 1000px;
+}
+
+.contact-height {
+	height: 1000px;
+    width: 100%;
+}
+
+.contact-title {
+	font-size: 2.7rem;
+	color: #ffffff;
+	margin-bottom: 100px;
+}
+
+     /* Form Begins*/
+
+.form-container {
+	max-width: 770px;
+	margin: 0 auto;
+}
+
+form {
+	color: #ffffff;
+
+}
+
+input:focus {
+	background-color: none;
+	outline: none;
+}
+
+.input-title {
+	margin-bottom: 10%;
+}
+
+      /* Name Input */
+
+.name-wrap {
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 10px;
+}
+
+.input-field {
+	border: none;             
+	background-color: #0f0e38;
+	color:  #ffffff;
+	width: 90%;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 1rem;
+	border-radius: 2px;
+}
+
+/* Message Input */
+
+.text-input {
+	outline: none;
+	border: none;
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: -8px;
+    margin-top: 10px;
+    background-color: #edf2f4;
+    border-radius: 2px;
+    font-size: 1rem;
+    color:  #ffffff;
+    background-color: #0f0e38;
+    padding: 10px;
+}
+
+.message-input {
+	padding-bottom: 20px;
+}
+
+input:focus {
+	background-color: #0de7cb;
+}
+
+textarea:focus {
+	background-color: #0de7cb;
+}
+	
+input.submit {
+    border: 1px solid #0de7cb;
+    background: none;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 2px;
+	width: 300px;
+	height: 100px;
+	background: linear-gradient(
+	 rgba(15, 14, 56, 0.1), rgba(15, 14, 56, 0.1) 50%, #0de7cb 50%, #0de7cb);
+	background-size: 100% 200%;
+	transition: all 0.5s ease;
+	margin-bottom: -1px;
+	color: #ffffff;
+	cursor: pointer;	
+}
+
+input.submit:hover {
+	background-position: 100% 100%;
+	border: 1px solid #0de7cb;
+	color:  #0f0e38;
+}
+
+/* Contact Section Ends */
+
+/* Footer Section Begins*/
+
+footer {
+	background-color: #0f0e38;
+	height: 280px;
+}
+
+.icon-container {
+	max-width: 110px;
+	margin: 0 auto;
+}
+
+.fa.fa-twitter, .fa.fa-linkedin {
+	margin-top: 20px;
+	font-size: 2.2rem;
+	color:  #0de7cb;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.twitter-icon {
+	width: 50%;
+	float: left;	
+}
+
+.linkedin-icon {
+	width: 50%;
+	float: left;
+}
+
+.social-media-icons {
+	margin-top: 100px;
+	margin: 0px 0px;
+}
+
+     /* Icon bounce */
+.fa.fa-twitter, .fa.fa-linkedin {
+	transition: margin-top .3s;
+}
+
+.fa.fa-twitter:hover, .fa.fa-linkedin:hover {
+	margin-top: 97px;
+}
+
+     /* End of Icon Bounce */
+
+.email-link {
+	clear: both;
+	text-align: center;
+	color: #0de7cb;
+	text-decoration: none;
+	border: 1px solid #0f0e38;
+}
+
+.email-link:hover {
+	text-decoration: underline;
+}
+
+/* End of Footer*/
+
+
+
+
+
+
+
+
+
+
